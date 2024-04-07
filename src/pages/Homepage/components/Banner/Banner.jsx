@@ -16,7 +16,7 @@ const Banner = () => {
         <div
             className="banner"
             style={{
-                backgroundImage: `url(https://media.themoviedb.org/t/p/w1066_and_h600_bestv2/${data?.results[0].backdrop_path})`,
+                backgroundImage: `url(https://image.tmdb.org/t/p/original${data?.results[0].backdrop_path})`,
             }}
         >
             <div className="text-white banner-text-area">
