@@ -19,7 +19,7 @@ function App() {
                 <Route path="/" element={<AppLayout />}>
                     <Route index element={<Homepage />} />
                     {/* movies 로 시작하는 페이지가 많을때 ROute 이용하여 그룹으로 구성할 수 있다. */}
-                    <Route path="/movies">
+                    <Route path="movies">
                         <Route index element={<MoviePage />} />
                         <Route path=":id" element={<MovieDetailPage />} />
                         {/* <Route path='/:id/recommandation' element={}/> */}
