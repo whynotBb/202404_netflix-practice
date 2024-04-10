@@ -12,7 +12,7 @@ const MovieSlider = ({ title, movies, responsive }) => {
                 infinite={true}
                 centerMode={true}
                 autoPlay={true}
-                itemClass="movie-slider p-1"
+                itemClass="movie-slider p-2"
                 responsive={responsive}
             >
                 {movies.map((movie, index) => (

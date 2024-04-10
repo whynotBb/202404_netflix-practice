@@ -7,3 +7,13 @@
 .react-multiple-carousel__arrow {
     background: transparent !important;
 }
+nav.bg-body-tertiary {
+    position: fixed !important;
+    width: 100% !important;
+    background-color: rgba(0, 0, 0, 0.8) !important;
+    z-index: 9999 !important;
+}
+button.navbar-toggler:focus {
+    outline: 0 !important;
+    box-shadow: 0 !important;
+}
