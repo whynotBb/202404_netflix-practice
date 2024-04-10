@@ -5,6 +5,8 @@
     background-color: transparent !important;
     color: #ffffff8c !important;
     border: none !important;
+    min-width: 38px;
+    text-align: center;
 }
 .pagination-wrap .page-link:focus-within {
     box-shadow: none !important;

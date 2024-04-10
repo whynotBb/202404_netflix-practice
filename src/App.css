@@ -4,16 +4,34 @@
     min-height: 100vh;
     color: #ffffff8c;
 }
+.body-wrapper {
+    padding-top: 56px;
+}
 .react-multiple-carousel__arrow {
     background: transparent !important;
 }
 nav.bg-body-tertiary {
+    top: 0;
     position: fixed !important;
     width: 100% !important;
-    background-color: rgba(0, 0, 0, 0.8) !important;
+    background-color: rgba(10, 10, 10, 0.8) !important;
     z-index: 9999 !important;
+}
+button.navbar-toggler {
+    border: none;
 }
 button.navbar-toggler:focus {
     outline: 0 !important;
-    box-shadow: 0 !important;
+    box-shadow: none !important;
+}
+.loading-box {
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

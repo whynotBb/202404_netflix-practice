@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import { useSearchMovieQuery } from "../../hook/useSearchMovie";
-import { Container, Row, Col, Spinner } from "react-bootstrap";
+import { Container, Row, Col, Spinner, Alert } from "react-bootstrap";
 import Dropdown from "react-bootstrap/Dropdown";
 import MovieCard from "../../common/MovieCard/MovieCard";
 import ReactPaginate from "react-paginate";
@@ -56,13 +56,21 @@ const MoviePage = () => {
 
     if (isLoading) {
         return (
-            <Spinner animation="border" role="status">
-                <span className="visually-hidden">Loading...</span>
-            </Spinner>
+            <div className="loading-box">
+                <Spinner animation="border" role="status">
+                    <span className="visually-hidden">Loading...</span>
+                </Spinner>
+            </div>
         );
     }
     if (isError) {
-        return <h1>{error.message}</h1>;
+        return (
+            <div className="loading-box">
+                <Alert variant="dark" bg="dark" data-bs-theme="dark">
+                    {error.message}
+                </Alert>
+            </div>
+        );
     }
     return (
         <Container className="movie-container">

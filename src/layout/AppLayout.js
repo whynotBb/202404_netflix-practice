@@ -14,14 +14,14 @@ const AppLayout = () => {
         setKeyword("");
     };
     return (
-        <div>
+        <div className="body-wrapper">
             <Navbar
                 bg="dark"
                 data-bs-theme="dark"
                 expand="lg"
                 className="bg-body-tertiary"
             >
-                <Container fluid>
+                <Container>
                     <Navbar.Brand href="/">
                         <FontAwesomeIcon
                             icon={faSnapchat}
