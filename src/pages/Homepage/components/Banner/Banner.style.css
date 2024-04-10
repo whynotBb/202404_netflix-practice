@@ -20,7 +20,15 @@
     justify-content: center;
     text-align: right;
     height: 100%;
-    padding: 0 20px 0 40%;
+    padding: 0 20px 0 30%;
+}
+.banner-text-area p {
+    width: 100%;
+    white-space: normal;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 .banner-text-area > * {
     z-index: 2;
