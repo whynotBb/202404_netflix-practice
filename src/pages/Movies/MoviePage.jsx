@@ -42,14 +42,13 @@ const MoviePage = () => {
         setSortDropdownTitle(name ? name : "정렬 방식을 선택하세요");
     };
 
-    console.log(keyword);
     const { data, isLoading, isError, error } = useSearchMovieQuery({
         keyword,
         page,
         genreId,
         sortType,
     });
-    console.log("data", data);
+    // console.log("data", data);
 
     const handlePageClick = ({ selected }) => {
         setPage(selected + 1);
