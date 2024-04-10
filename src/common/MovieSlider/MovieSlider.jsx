@@ -11,6 +11,7 @@ const MovieSlider = ({ title, movies, responsive }) => {
             <Carousel
                 infinite={true}
                 centerMode={true}
+                autoPlay={true}
                 itemClass="movie-slider p-1"
                 responsive={responsive}
             >

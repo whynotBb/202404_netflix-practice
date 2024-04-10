@@ -9,6 +9,9 @@ npm i @tanstack/react-query-devtools
 https://www.npmjs.com/package/react-multi-carousel
 npm install react-multi-carousel --save
 
+https://www.npmjs.com/package/react-paginate
+npm install react-paginate --save
+
 ## url
 
 https://chipper-cannoli-dfd211.netlify.app/
