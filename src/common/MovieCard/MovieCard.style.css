@@ -1,6 +1,6 @@
 .movie-card {
     width: 100%;
-    height: 400px;
+    height: 500px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center top;
@@ -46,8 +46,18 @@
     font-size: 20px;
     padding: 0;
 }
+@media (max-width: 1440px) {
+    .movie-card {
+        height: 300px;
+    }
+}
+@media (max-width: 1024px) {
+    .movie-card {
+        height: 400px;
+    }
+}
 @media (max-width: 464px) {
     .movie-card {
-        height: 260px;
+        height: 280px;
     }
 }
