@@ -13,27 +13,27 @@ const MovieDetailPage = () => {
     const {data, isLoading, isError, error} = useMovieDetailQuery(id);
     const {
         data: reviewsData,
-        isLoading: reviewsLoading,
-        isError: reviewsError,
-        error: reviewsErrorM,
+        // isLoading: reviewsLoading,
+        // isError: reviewsError,
+        // error: reviewsErrorM,
     } = useMovieReviewsQuery(id);
     const {
         data: similarData,
-        isLoading: similarLoading,
-        isError: similarError,
-        error: similarErrorM,
+        // isLoading: similarLoading,
+        // isError: similarError,
+        // error: similarErrorM,
     } = useSimilarMoviesQuery(id);
     const {
         data: videosData,
-        isLoading: videosLoading,
-        isError: videosError,
-        error: videosErrorM,
+        // isLoading: videosLoading,
+        // isError: videosError,
+        // error: videosErrorM,
     } = useMovieVideosQuery(id);
     const {
         data: creditsData,
-        isLoading: creditsLoading,
-        isError: creditsError,
-        error: creditsErrorM,
+        // isLoading: creditsLoading,
+        // isError: creditsError,
+        // error: creditsErrorM,
     } = useMovieCreditsQuery(id);
 
     console.log(
