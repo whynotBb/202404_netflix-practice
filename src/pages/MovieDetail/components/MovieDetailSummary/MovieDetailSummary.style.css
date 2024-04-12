@@ -1,0 +1,29 @@
+.movie-info {
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+    gap: 10px;
+}
+.movie-info .tag {
+    padding: 0 10px;
+    background: rgb(255, 0, 0, 0.3);
+    border: 1px solid red;
+    border-radius: 6px;
+    font-size: 14px;
+}
+.overview {
+    line-height: 23px;
+    width: 100%;
+    white-space: normal;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+.overview.on {
+    display: block;
+    -webkit-line-clamp: initial;
+    -webkit-box-orient: initial;
+    overflow: initial;
+}

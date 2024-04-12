@@ -1,11 +1,13 @@
 import React from 'react';
 import {useParams} from 'react-router-dom';
 import {useMovieDetailQuery} from '../../hook/useMovieDetail';
-import {Spinner, Alert, Container} from 'react-bootstrap';
+import {Spinner, Alert, Container, Row, Col} from 'react-bootstrap';
 import {useMovieReviewsQuery} from '../../hook/useMovieReviews';
 import {useSimilarMoviesQuery} from '../../hook/useSimilarMovies';
 import {useMovieVideosQuery} from '../../hook/useMovieVideos';
 import {useMovieCreditsQuery} from '../../hook/useMovieCredits';
+import MovieDetailCard from './components/movieDetailCard/MovieDetailCard';
+import MovieDetailSummary from './components/MovieDetailSummary/MovieDetailSummary';
 
 const MovieDetailPage = () => {
     const {id} = useParams();
@@ -67,7 +69,18 @@ const MovieDetailPage = () => {
             </div>
         );
     }
-    return <Container></Container>;
+    return (
+        <Container>
+            <Row className='my-4'>
+                <Col lg={4} sm={12}>
+                    <MovieDetailCard movie={data} />
+                </Col>
+                <Col lg={8} sm={12}>
+                    <MovieDetailSummary movie={data} />
+                </Col>
+            </Row>
+        </Container>
+    );
 };
 
 export default MovieDetailPage;
