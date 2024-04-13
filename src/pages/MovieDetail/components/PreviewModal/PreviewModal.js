@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Modal } from "react-bootstrap";
 import "./PreviewModal.style.css";
 import YouTube from "react-youtube";
