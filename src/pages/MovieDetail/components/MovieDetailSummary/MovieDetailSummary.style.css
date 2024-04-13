@@ -28,9 +28,10 @@ h3 {
     border-top: 1px solid rgb(255, 255, 255, 0.3);
     border-bottom: 1px solid rgb(255, 255, 255, 0.3);
 }
-h3 {
+h3.title {
     padding-left: 0 !important;
+    flex-wrap: wrap !important;
 }
-h3::before {
+h3.title::before {
     display: none !important;
 }

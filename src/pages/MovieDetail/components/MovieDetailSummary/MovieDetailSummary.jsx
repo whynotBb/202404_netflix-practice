@@ -4,7 +4,7 @@ const MovieDetailSummary = ({ movie }) => {
     return (
         <div>
             <span className="tag">{movie?.tagline}</span>
-            <h3>
+            <h3 className="title">
                 <b>{movie.title}</b> ({movie.release_date.slice(0, 4)})
                 <span className="time">
                     {Math.floor(movie.runtime / 60)}시간
