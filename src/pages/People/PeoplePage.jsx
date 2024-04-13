@@ -47,7 +47,7 @@ const PeoplePage = () => {
                         ></div>
                     </Col>
                     <Col>
-                        <div className="profileInfo">
+                        <div className="profileInfo my-3">
                             <h2>{personDetailData?.name}</h2>
                             <p>
                                 {personDetailData?.known_for_department},{" "}
