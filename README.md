@@ -37,5 +37,11 @@ https://velog.io/@sasha1107/Netlify-%EB%A6%AC%EC%95%A1%ED%8A%B8-%EC%83%88%EB%A1%
     -   무한스크롤 적용
     -   ui 개선
 -   home 화면 개선
+
     -   ui 개선
+
 -   top 버튼 만들기
+
+-   people details page 추가
+    -   상세페이지 > people 클릭 시 이동
+    -   people 의 detail, + 출연 인기 영화 제공 > 영화 클릭 시 movie detail page 이동
