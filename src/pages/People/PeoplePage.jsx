@@ -67,7 +67,11 @@ const PeoplePage = () => {
                             itemClass="movie-slider p-2"
                         >
                             {data?.cast.map((movie, index) => (
-                                <MovieCard key={index} movie={movie} />
+                                <MovieCard
+                                    key={index}
+                                    movie={movie}
+                                    type="sm"
+                                />
                             ))}
                         </Carousel>
                     </Row>
