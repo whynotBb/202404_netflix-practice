@@ -23,7 +23,7 @@ nav.bg-body-tertiary {
     position: fixed !important;
     width: 100% !important;
     background-color: rgba(10, 10, 10, 0.8) !important;
-    z-index: 9999 !important;
+    z-index: 1000 !important;
 }
 button.navbar-toggler {
     border: none;

@@ -6,6 +6,7 @@ import MovieDetailPage from "./pages/MovieDetail/MovieDetailPage";
 import MoviePage from "./pages/Movies/MoviePage";
 import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
 import "bootstrap/dist/css/bootstrap.min.css";
+import PeoplePage from "./pages/People/PeoplePage";
 
 // 홈페이지 '/'
 // 영화 전체 보여주는 페이지(서치) '/movies?q=skdfj'
@@ -24,6 +25,7 @@ function App() {
                         <Route path=":id" element={<MovieDetailPage />} />
                         {/* <Route path='/:id/recommandation' element={}/> */}
                     </Route>
+                    <Route path="people/:id" element={<PeoplePage />} />
                 </Route>
                 <Route path="*" element={<NotFoundPage />} />
             </Routes>

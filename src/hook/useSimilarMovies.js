@@ -1,14 +1,14 @@
-import {useQuery} from '@tanstack/react-query';
-import api from '../utils/api';
+import { useQuery } from "@tanstack/react-query";
+import api from "../utils/api";
 
-const fetchSimilarMovies = (id) => {
-    return api.get(`movie/${id}/similar?language=ko`);
+const fetchRecommendationsMovies = (id) => {
+    return api.get(`movie/${id}/recommendations`);
 };
 
-export const useSimilarMoviesQuery = (id) => {
+export const useRecommendationsMoviesQuery = (id) => {
     return useQuery({
-        queryKey: ['movie-similar', id],
-        queryFn: () => fetchSimilarMovies(id),
+        queryKey: ["movie-recommendations", id],
+        queryFn: () => fetchRecommendationsMovies(id),
         select: (result) => result.data,
     });
 };

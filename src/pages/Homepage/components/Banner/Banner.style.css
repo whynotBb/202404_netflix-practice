@@ -1,6 +1,6 @@
 .banner {
     height: 56vh;
-    background-position: center;
+    background-position: top 20% center;
     background-repeat: no-repeat;
     background-size: cover;
 }

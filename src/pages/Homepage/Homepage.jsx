@@ -3,6 +3,7 @@ import Banner from "./components/Banner/Banner";
 import PopularMovieSlide from "./components/PopularMovieSlide/PopularMovieSlide";
 import TopRatedMovieSlide from "./components/TopRatedMovieSlide/TopRatedMovieSlide";
 import UpcomingMovieSlide from "./components/UpcomingMovieSlide/UpcomingMovieSlide";
+import "./Homepage.style.css";
 
 // 1. 배너만들기 - popular movie 의 첫번째 아이템 보여주기
 // 2. popular movie

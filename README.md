@@ -25,7 +25,8 @@ https://velog.io/@sasha1107/Netlify-%EB%A6%AC%EC%95%A1%ED%8A%B8-%EC%83%88%EB%A1%
 
 ## TODO
 
--   상세페이지 이동 useNavigate
+v 상세페이지 이동 useNavigate
+
 -   상세페이지 디자인
     -   상세페이지에는 포스터 /장르/ 제목 / 인기도 / 줄거리 / 예산(toFixed(3))/개봉일/출연진 등
     -   포스터 선택하여 예고편 재생 - react bootstrap modal / react-youtube
@@ -45,3 +46,7 @@ https://velog.io/@sasha1107/Netlify-%EB%A6%AC%EC%95%A1%ED%8A%B8-%EC%83%88%EB%A1%
 -   people details page 추가
     -   상세페이지 > people 클릭 시 이동
     -   people 의 detail, + 출연 인기 영화 제공 > 영화 클릭 시 movie detail page 이동
+
+https://www.npmjs.com/package/react-youtube
+
+npm i react-youtube
